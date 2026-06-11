@@ -87,7 +87,7 @@ function saveHistory() {
 
 function addToHistory(barcode) {
   // Move to top if already exists, else prepend
-  history = [barcode, ...history.filter((b) => b !== barcode)];
+  history = [barcode, ...history.filter((b) => b !== barcode)].slice(0, 25);
   saveHistory();
   renderHistory();
 }
