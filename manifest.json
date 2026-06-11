@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "FakeScan",
+  "version": "1.0",
+  "description": "Simulate barcode scanner input for Dutchie POS",
+  "permissions": ["sidePanel", "scripting", "activeTab", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open FakeScan"
+  }
+}
